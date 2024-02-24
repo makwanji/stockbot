@@ -22,6 +22,11 @@ var subnetNameDBB = 'DBSubnetB'
 var subnetDBIPA = '10.0.3.0/24'
 var subnetDBIPB = '10.0.31.0/24'
 
+// route table
+var publicRoute = 'App-public-route'
+var privateRoute = 'App-private-route'
+
+
 resource virtualNetwork 'Microsoft.Network/virtualNetworks@2021-05-01' = {
   name: virtualNetworkName
   location: location
@@ -71,4 +76,3 @@ resource virtualNetwork 'Microsoft.Network/virtualNetworks@2021-05-01' = {
     ]
   }
 }
-
