@@ -20,7 +20,7 @@ app.listen(process.env.REACT_APP_SERVER_PORT, () => {
 app.get('/test', (req, res) => {
   const { table } = req.query;
 
-  pool.query(`select * from ${table}`, (err, results) => {
+  pool.query(`select * from sample`, (err, results) => {
     if (err) {
       return res.send(err);
     } else {
