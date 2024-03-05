@@ -1,0 +1,8 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: config-db
+  namespace: dev
+data:
+  MYSQL_HOST: stockbot-db
+  MYSQL_ROOT_PASSWORD: root
