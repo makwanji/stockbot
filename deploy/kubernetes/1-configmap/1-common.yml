@@ -1,0 +1,10 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: config-common
+  namespace: dev
+data:
+  MYSQL_USER: sampleuser
+  MYSQL_PASSWORD: samplepassword
+  MYSQL_DATABASE: sampledb
+  REACT_APP_SERVER_PORT: '8000'
