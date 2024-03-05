@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: frontend:latest
+          image: makwanji/stockbot-frontend:latest
           imagePullPolicy: Always
           env:
           ports:

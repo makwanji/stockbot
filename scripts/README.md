@@ -81,3 +81,10 @@ kubectl apply -f ../deploy/kubernetes/6-service/3-frontend.yml
 
 6. Expose this app with ingress
 
+## Access application
+
+In order to access this application from your laptop, you need to expose this port
+
+```bash
+kubectl -n dev port-forward services/stockbot-frontend 4000:3000
+```
